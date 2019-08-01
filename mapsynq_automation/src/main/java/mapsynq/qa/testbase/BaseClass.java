@@ -12,6 +12,8 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
+import org.openqa.selenium.firefox.FirefoxDriver;
+import org.openqa.selenium.firefox.FirefoxOptions;
 import org.openqa.selenium.ie.InternetExplorerDriver;
 import org.openqa.selenium.remote.DesiredCapabilities;
 import org.openqa.selenium.support.FindBy;
@@ -98,6 +100,13 @@ public class BaseClass {
 				dr = new ChromeDriver(options);
 				break;
 			}  
+			
+			case "Firefox":
+			{
+				System.setProperty("webdriver.gecko.driver", System.getProperty("user.dir")+"\\src\\main\\resources\\Drivers\\geckodriver.exe");
+				dr = new FirefoxDriver();
+				break;
+			}  
 
 			case "Chrome_Headless":
 			{
@@ -110,6 +119,15 @@ public class BaseClass {
 				options.addArguments("--headless","--disable-gpu");
 				options.addArguments("disable-infobars");
 				dr = new ChromeDriver(options);
+				break;
+			}
+			
+			case "Firefox_Headless":
+			{
+				System.setProperty("webdriver.gecko.driver", System.getProperty("user.dir")+"\\src\\main\\resources\\Drivers\\geckodriver.exe");
+				FirefoxOptions options = new FirefoxOptions();
+				options.addArguments("--headless","--disable-gpu");
+				dr = new FirefoxDriver(options);
 				break;
 			}
 			}

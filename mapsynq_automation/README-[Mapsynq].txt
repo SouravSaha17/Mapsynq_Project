@@ -1,6 +1,6 @@
   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 #           		MAPYSYNQ Automation			    #
-#		       Version 1.0.0      			    #
+#		              Version 1.0.0      			    #
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 Contents
 ---------------------------------------------------------------------
@@ -13,8 +13,8 @@ Contents
 
 Concepts Included
 *********************************************************************
-	Data Driven Testing Approach
-	Dependency injection Via Maven
+	    Data Driven Testing Approach
+	    Dependency injection Via Maven
         Page Object pattern
         Execution using Command Prompt
         Common web page interaction methods
@@ -23,22 +23,22 @@ Concepts Included
 *********************************************************************
 Tools
 *********************************************************************
-                   Eclispe
-                   JAVA
-                   Maven
-                   TestNG
-                   Apache POI
-                   Selenium Webdriver
-		   Extent Report
-                   Chrome Driver
+        Eclispe
+        JAVA
+        Maven
+        TestNG
+        Apache POI
+        Selenium Webdriver
+		Extent Report
+        Chrome Driver
                    
 Requirements
 *********************************************************************
 In order to utilise this project you need to have the following installed locally:
 
-                 Maven 3.1
-                 Chrome and Chromedriver (UI tests use Chrome by default, can be changed in config)
-                 Java 1.8.0.121	
+        Maven 3.1
+        Chrome and Chromedriver (UI tests use Chrome by default, can be changed in config)
+        Java 1.8.0.121	
 
 
 Test Framework Setup

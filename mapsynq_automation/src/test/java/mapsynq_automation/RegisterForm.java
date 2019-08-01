@@ -29,7 +29,6 @@ public class RegisterForm extends BaseClass {
 	@BeforeMethod
 	public void initilasation() 
 	{
-		//startTest("MapsynqRegisterPage");
 		logger = report.startTest("MapsynqRegisterPage");
 		init();		
 		mapRegister=new MapsynqRegisterPage();
@@ -38,10 +37,6 @@ public class RegisterForm extends BaseClass {
 	@Test (dataProvider = "dataprovidermethod")
 	public void CreateNewProfile(String First_Name, String Last_Name, String Date, String Email, String Password) throws InterruptedException
 	{
-		//String First_Name; String Last_Name; String Date; String Email; String Password;
-		System.out.println("first test");
-		//mapLive.hideAdd();
-		//ReuseableComponents.wait(thread, 1);
 		hideAdd("Hide the advatisement");
 		mapRegister.formFill(First_Name, Last_Name, Date, Email, Password);
 	}

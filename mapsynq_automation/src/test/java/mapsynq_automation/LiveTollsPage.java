@@ -26,7 +26,7 @@ public class LiveTollsPage extends BaseClass {
 	}
 
 	@Test
-	public void CheckLiveCam()
+	public void CheckTolls()
 	{
 		hideAdd("Hide the advatisement");
 		maplivetoll.livetoll();
