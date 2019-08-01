@@ -3,7 +3,7 @@
 <suite name="Suite" parallel="classes" thread-count="9" >
 
 <listeners>
-<listener class-name="mapsynq.qa.listners.TestListners"></listener>
+<listener class-name="mapsynq.qa.listeners.TestITlisteners"></listener>
 </listeners>
 
   <test name="Test" >
