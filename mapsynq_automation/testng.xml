@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Suite" thread-count="6">
+
+<listeners>
+<listener class-name="mapsynq.qa.listners.TestListners"></listener>
+</listeners>
+
+  <test name="Test"> 
+    <classes>
+      <class name="mapsynq_automation.LandingPage"/>
+      <class name="mapsynq_automation.SigninPage"/>
+      <class name="mapsynq_automation.ForgotPasswordPage"/>
+      <class name="mapsynq_automation.RegisterForm"/>
+      <class name="mapsynq_automation.LiveIncidentPage"/>
+      <class name="mapsynq_automation.LiveCameraPage"/>
+      <class name="mapsynq_automation.LiveTollsPage"/>
+      <class name="mapsynq_automation.DirectionPage"/>
+      <class name="mapsynq_automation.PersonalPage"/>
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->
